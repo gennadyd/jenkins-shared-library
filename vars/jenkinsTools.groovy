@@ -1,8 +1,8 @@
 
-class JenkinsTools {
+//class JenkinsTools {
 
     //construction method
-    JenkinsTools(){}
+    //JenkinsTools(){}
 
     /**
     * The function is getting list of Jenkins jobs.
@@ -59,4 +59,4 @@ class JenkinsTools {
         return [result_success, result_failed]
     }
 
-}
+//}
