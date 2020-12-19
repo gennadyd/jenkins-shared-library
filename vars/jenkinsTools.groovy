@@ -1,12 +1,12 @@
 
-// class JenkinsTools {
+class JenkinsTools {
 
-//     //construction method
-//     JenkinsTools(){}
+    //construction method
+    JenkinsTools(){}
 
-//     /**
-//     * The function is getting list of Jenkins jobs.
-//     */
+    /**
+    * The function is getting list of Jenkins jobs.
+    */
     def getJobsList() {
         def jobs_list = []
         Jenkins.instance.getAllItems(AbstractItem.class).each {
@@ -15,4 +15,4 @@
         return jobs_list
     }
 
-// }
+}
