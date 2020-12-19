@@ -15,8 +15,3 @@ def get_results(param1) {
     }
 }
 
-// def readJsonParam(path){
-//     println "readJsonParam"
-//     readJSON file: "$path"
-//     return []
-// }
