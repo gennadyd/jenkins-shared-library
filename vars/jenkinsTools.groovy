@@ -15,6 +15,14 @@ class JenkinsTools {
         return jobs_list
     }
 
+    /**
+    * The function is getting rootPath of Jenkins slave.
+    */
+    def getRootPath(node) {
+        return Jenkins.instance.getNode(node).getRootPath()
+    }
+    
+
    /**
     * The function is deleting Keep Forever builds older than keepDays params
     * @param String keepDays - days to keep "keep forever" builds
