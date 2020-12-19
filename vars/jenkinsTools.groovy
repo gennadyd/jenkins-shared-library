@@ -22,7 +22,19 @@
     def getRootPath(node) {
         return Jenkins.instance.getNode(node).getRootPath()
     }
-    
+
+    /**
+    * The function is getting list of nodes from particular label.
+    */
+    def getNodesByLabel(label) {
+        def nodes = []
+        jenkins.model.Jenkins.instance.computers.each { c ->
+            if (c.node.labelString.contains(label)) {
+                nodes.add(c.node.selfLabel.name)
+            }
+        }
+        return nodes
+    }
 
    /**
     * The function is deleting Keep Forever builds older than keepDays params
